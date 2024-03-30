@@ -1,8 +1,12 @@
-# GoFM Music API
+# GoFM server
 
 Creating a streaming server in golang.
 
-To run this application, you must have docker installed on your machine
+Pre required to run the server:
+    - have docker installed on your pc
+    - have launched the goFm music api, 
+        as the server retrieves music to stream from this api
+
 #
 
 ## Getting Started
@@ -33,10 +37,4 @@ make up
 
 ```
 make down
-```
-
-### Executing command inside the container
-
-```
-make exec
 ```
