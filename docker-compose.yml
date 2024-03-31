@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+    server:
+        build:
+            dockerfile: build/Dockerfile
+            context: .
+        image: gofm-app:latest
+        ports:
+            - "8082:8082"
+            - "2112:2112"
+        env_file:
+            - .env
+        networks:
+            - go-fm-network
+
+networks:
+    go-fm-network:
+        external: true
